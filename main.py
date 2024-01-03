@@ -9,11 +9,11 @@ pygame.init()
 width, height = 1200, 800
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Connect 4")
-logo = pygame.image.load('C:\\Users\\aramy\\Desktop\\Projects\\Connect4\\c4.png')
+logo = pygame.image.load('c4.png')
 logo_rect = logo.get_rect(center=(width // 2, height // 2 - 150))
 
 # Boutons
-font_path = "C:\\Users\\aramy\\Desktop\\Projects\\Connect4\\Orbitron-Black.ttf"
+font_path = "Orbitron-Black.ttf"
 font = pygame.font.Font(font_path, 30)
 easy_button_text = font.render("EASY", True, (0, 0, 0))
 easy_button_rect = easy_button_text.get_rect(center=(width // 2, height // 2 + 100))
@@ -31,7 +31,7 @@ quit_button_text = font.render("QUIT", True, (0, 0, 0))
 quit_button_rect = quit_button_text.get_rect(center=(width // 2, height // 2 + 310))
 quit_button_rect.inflate_ip(90, 20)
 
-back_path = pygame.image.load('C:\\Users\\aramy\\Desktop\\Projects\\Connect4\\wp2.jpg')
+back_path = pygame.image.load('wp2.jpg')
 background_image = pygame.transform.scale(back_path, (width, height))
 
 
